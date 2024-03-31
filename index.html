@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binod Subedi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets\favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+  </head>
+  <body>
+    <div class="top-container">
+    <nav id="desktop-nav">
+      <div class="logo" style="font-family: 'Merriweather', serif;
+      "></div>
+      <div>
+        <ul class="nav-links" style="font-family: 'Merriweather', serif;
+        " >
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Interest and Skill</a></li>
+          <li><a href="#Certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Binod Subedi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Interest and Skills</a></li>
+          <li><a href="#Certificate" onclick="toggleMenu()">Certificate</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets\binod.png" alt="Binod Subedi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">👋 Hello, I'm</p>
+        <h1 class="title" style="font-size: 2.56rem; font-family: 'Sacramento', cursive;">Binod Subedi</h1>
+    
+        <div class="space"></div>
+        <div class="text-3">
+          And I'm  <span class="typing-2"></span>
+        </div>
+        <div class="space"></div>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/binod-subedi-3238a7234/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/SubediBinod'" />
+          <img src="./assets/whatsapp.png" alt="My Whatsapp" class="icon" onclick="location.href='https://wa.me/+917032858003'" />
+          <img src="./assets/facebook.png" alt="My Facebook" class="icon" onclick="location.href='https://www.facebook.com/Subedi15/'" />
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title" style="color: #47A992;
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;">About Me</h1>
+      <hr />
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/binod-pic2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>School <br /> 2019 </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> +2 Science <br /> 2019-2021 </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B-Tech Computer Science and Engineering <br /> 2021-2025 </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              📚 Currently, I'm on an exciting journey in pursuit of knowledge, studying towards a Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE).
+              🌟 My passion for technology and 💡innovation drives me to explore and excel in this dynamic field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title" style="color: #47A992;
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;"> Interest and Skill</h1>
+      <hr>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming and Web Dev</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets\html.png"
+                  alt="html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\css.png"
+                  alt="Css icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\java.png"
+                  alt="Java icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\c.png"
+                  alt="c icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets\mysql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\linux.png"
+                  alt="linux icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\figma.png"
+                  alt="figma icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets\github.png"
+                  alt="github icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Certificate'"
+      />
+    </section>
+    <section id="Certificate">
+      <p class="section__text__p1" >Browse My </p>
+      <h1 class="title"style="color: #47A992;
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;">Certificate</h1>
+      <hr>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets\certificate-1.png"
+                alt="Certificate 1"
+                class="Certificate-img"
+                style
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Science Workshop</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets\certificate-2.png"
+                alt="Certificate 2"
+                class="Certificate-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ziroh</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <div class="space"></div>
+    <section id="contact">
+      <p class="section__text__p1" >Contact Me</p>
+      <h1 class="title" style="color: #47A992;
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;">Get In Touch</h1>
+      <hr>
+      <p style="text-align: center;">If you love web development as much as I do. Let's talk about how awesome it is.
+    </p>
+      <p style="text-align: center;"> Feel free to contact me.</p>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:bidhaksubedi77@gmail.com">Mail </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/binod-subedi-3238a7234/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Interest and Skill</a></li>
+            <li><a href="#Certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Binod Subedi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
