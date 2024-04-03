@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,42 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
 </head>
-  </head>
-  <body>
+<body>
     <div class="top-container">
-    <nav id="desktop-nav">
-      <div class="logo" style="font-family: 'Merriweather', serif;
-      "></div>
-      <div>
-        <ul class="nav-links" style="font-family: 'Merriweather', serif;
-        " >
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Interest and Skill</a></li>
-          <li><a href="#Certificate">Certificate</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Binod Subedi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Interest and Skills</a></li>
-          <li><a href="#Certificate" onclick="toggleMenu()">Certificate</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+      <header>
+        <nav class="navbar">
+          <a href="#profile" class="my-name">Binod Subedi</a>
+          <ul class="nav-menu">
+          <li class="nav-item"><a href="#about"class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#experience"class="nav-link">Interest And Skills</a></li>
+          <li class="nav-item"><a href="#Certificate"class="nav-link">Certificate</a></li>
+          <li class="nav-item"><a href="#contact"class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
     <section id="profile">
       <div class="section__pic-container">
         <img src="assets\binod.png" alt="Binod Subedi profile picture" />
@@ -71,8 +56,8 @@
           <img src="./assets/facebook.png" alt="My Facebook" class="icon" onclick="location.href='https://www.facebook.com/Subedi15/'" />
         </div>
       </div>
-    </div>
     </section>
+  </div>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title" style="color: #47A992;
@@ -132,6 +117,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
+    
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title" style="color: #47A992;
@@ -239,6 +225,7 @@
         onclick="location.href='./#Certificate'"
       />
     </section>
+  </div>
     <section id="Certificate">
       <p class="section__text__p1" >Browse My </p>
       <h1 class="title"style="color: #47A992;
@@ -267,16 +254,9 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Ziroh</h2>
-            </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <div class="space"></div>
     <section id="contact">
