@@ -25,6 +25,9 @@
   .hamburger.active .bar:nth-child(3){
     transform:translateY(-8px) rotate(-45deg);
   }
+  .my-name{
+    padding-top: 70px;
+  }
   .nav-menu{
     position:fixed;
     left:-100%;
