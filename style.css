@@ -53,7 +53,10 @@ nav {
   align-items: center;
   height: 17vh;
 }
-
+.nav-links-container {
+  margin: 0; 
+  padding: 0; 
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -161,6 +164,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
 }
 
 .section__text {
@@ -283,8 +287,51 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: 3px 3px 3px rgb(26, 21, 21);
 }
+.details-container-edu{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.details-container-certificate{
+  height: 500px;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: 3px 3px 3px rgb(26, 21, 21);
 
+}
+.details-container-exp{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.details-container-project{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 32px, rgba(17, 17, 26, 0.1) 0px 16px 48px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -337,6 +384,12 @@ article .icon {
   cursor: default;
 }
 
+#Certificate{
+  position: relative;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -348,22 +401,24 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
-.Certificate-img {
-  border-radius: 2rem;
-  display: flex;
-  height: 400px;
-  width: 300px;
-  margin: 0px auto;
-}
-
 .slider{
   position: relative;
   width: 100%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider img{
+  height:100%;
+  width:100%;
+  max-width: 800px;
+  max-height: 500px;
+  display: flex;
 }
 
 .myslide{
-  height: 655px;
+  height:600px;
   display: none;
   overflow: hidden;
 }
@@ -373,37 +428,44 @@ article .icon {
   top: 50%;
   transform: translate(0, -50%);
   font-size: 50px;
-	padding: 15px;
 	cursor: pointer;
-	color: #fff;
+	color: #434040;
 	transition: 0.1s;
 	user-select: none;
+  box-shadow: 3px 3px 3px rgb(221, 186, 186); /* Add shadow effect */
+  transition: box-shadow 0.3s ease;
 }
 .prev:hover, .next:hover{
-	color: #00a7ff; /* blue */
+	color: #dfd6de;
+}
+.prev{
+  left:80px;
 }
 .next{
-	right: 0;
+	right: 80px;
 }
-.dotsbox{
+.indicatorbox{
+  margin-bottom: -35px;
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	bottom: 20px;
-	cursor: pointer;
+  bottom: 10px; /* Adjust bottom position as needed */
+  width: 100%;
+  text-align: center;
 }
-.dot{
+.indicator{
 	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	margin: 0 10px;
-	cursor: pointer;
+  height: 18px; /* Adjust indicator size as needed */
+  width: 18px; /* Adjust indicator size as needed */
+  margin: 0 5px; /* Adjust space between indicators as needed */
+  background-color: #dfd2d2; /* Adjust indicator color as needed */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-.active, .dot:hover{
-	border-color: #00a7ff; /* blue */
+.indicator:hover {
+  background-color: #999; /* Change color on hover */
+}
+.indicator.active{
+	border-color: #4f6774; 
 }
 /* /javascript */
 
@@ -456,6 +518,9 @@ article .icon {
 
 @media screen and (max-width: 800px){
 	.myslide{
+		height: 600px;
+	}
+  .myslides{
 		height: 500px;
 	}
 	.txt{
@@ -562,9 +627,85 @@ footer {
   background-color: #DFEEEA; 
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 20px;
+  text-align: center; 
 }
-
-
 footer p {
   text-align: center;
+}
+footer > nav {
+  margin-bottom: 10px; /* Add spacing between navigation and copyright */
+}
+
+.sliders{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliders img{
+  height:100%;
+  width:100%;
+  max-width: 800px;
+  max-height: 500px;
+  display: flex;
+}
+
+.myslides{
+  height: 650px;
+  display: none;
+  overflow: hidden;
+}
+
+.prevs, .nexts{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+	cursor: pointer;
+	color: #434040;
+	transition: 0.1s;
+  box-shadow: 3px 3px 3px rgb(221, 186, 186); /* Add shadow effect */
+  transition: box-shadow 0.3s ease;
+}
+.prevs:hover, .nexts:hover{
+	color: #dfd6de;
+}
+.prevs{
+  left:80px;
+}
+.nexts{
+	right: 80px;
+}
+.indicatorboxs{
+  margin-bottom: -40px;
+	position: absolute;
+  bottom: 10px; /* Adjust bottom position as needed */
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.indicators{
+	display: inline-block;
+  height: 18px; 
+  width: 18px; 
+  margin: 0 5px; 
+  background-color: #856d6d; 
+  border-radius: 50%;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+}
+.indicators:hover {
+  background-color: #e6dede; /* Change color on hover */
+}
+.indicators.active{
+	border-color: #89adc0; 
+}
+.fades {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }

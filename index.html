@@ -23,6 +23,7 @@
           <li class="nav-item"><a href="#about"class="nav-link">About</a></li>
           <li class="nav-item"><a href="#experience"class="nav-link">Interest And Skills</a></li>
           <li class="nav-item"><a href="#Certificate"class="nav-link">Certificate</a></li>
+          <li class="nav-item"><a href="#projects"class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#contact"class="nav-link">Contact</a></li>
           </ul>
           <div class="hamburger">
@@ -55,9 +56,9 @@
           <img src="./assets/whatsapp.png" alt="My Whatsapp" class="icon" onclick="location.href='https://wa.me/+917032858003'" />
           <img src="./assets/facebook.png" alt="My Facebook" class="icon" onclick="location.href='https://www.facebook.com/Subedi15/'" />
         </div>
-      </div>
-    </section>
-  </div>
+      </div><!--Section_text-->
+      </section><!-- profile section -->
+    </div><!-- top-container-->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title" style="color: #47A992;
@@ -74,7 +75,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container-edu">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -83,7 +84,7 @@
               <h3>Education</h3>
               <p>School <br> Tilottama English Secondary School, Butwal<br />2006-2019 </p>
             </div>
-            <div class="details-container">
+            <div class="details-container-edu">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -92,7 +93,7 @@
               <h3>Education</h3>
               <p> +2 Science <br/> Tilottama Campus, Butwal<br /> 2019-2021 </p>
             </div>
-            <div class="details-container">
+            <div class="details-container-edu">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -117,7 +118,6 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title" style="color: #47A992;
@@ -126,7 +126,7 @@
       <hr>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container-exp">
             <h2 class="experience-sub-title">Programming and Web Dev</h2>
             <div class="article-container">
               <article>
@@ -181,7 +181,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container-exp">
             <h2 class="experience-sub-title">Tools </h2>
             <div class="article-container">
               <article>
@@ -232,10 +232,68 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#Certificate'"
+        onclick="location.href='./#projects'"
       />
     </section>
-  </div>
+    <section id="projects">
+      <p class="section__text__p1">Browse My </p>
+      <h1 class="title" style="color: #47A992;
+        font-family: 'Merriweather', serif;
+        font-size: 2.5rem;">Projects</h1>
+      <hr>
+      <div class="sliders">
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\weather-app.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1"onclick="location.href='https://github.com/SubediBinod/weather-app'" >Github</button> &nbsp;&nbsp;
+          <button class="btn btn-color-2" onclick="location.href='https://subedibinod.github.io/weather-app/'" >Live Demo</button>
+        </div>
+        </div>
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\calci.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/SubediBinod/JavaSwingSimpleCalculator'">Github</button>
+          </div>
+        </div>
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\ttt.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/SubediBinod/JavaSwingTicTacToe'">Github</button>
+          </div>
+        </div>
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\insta.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/SubediBinod/insta-clone'">Github</button> &nbsp;&nbsp;
+          <button class="btn btn-color-2" onclick="location.href='https://subedibinod.github.io/insta-clone/'">Live Demo</button>
+          </div>
+        </div>
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\rps.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/SubediBinod/JavaSwingRockPaperScissors'">Github</button>
+          </div>
+        </div>
+        <div class="myslides fades">
+          <div class="details-container-project">
+          <img src="assets\mini-projects\quote.png" alt="certificate-1" ><br>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/SubediBinod/Random-Quotes-using-api'">Github</button> &nbsp;&nbsp;
+          <button class="btn btn-color-2" onclick="location.href='https://subedibinod.github.io/Random-Quotes-using-api/'">Live Demo</button>
+          </div>
+        </div>
+        <a class="prevs" onclick="plusSlidess(-1)">&#10094;</a>
+        <a class="nexts" onclick="plusSlidess(1)">&#10095;</a>      
+        <!-- increase these span as per the no of myslide -->
+        <div class="indicatorboxs" style="text-align:center">
+          <span class="indicators" onclick="currentSlides(1)"></span>
+          <span class="indicators" onclick="currentSlides(2)"></span>
+          <span class="indicators" onclick="currentSlides(3)"></span>
+          <span class="indicators" onclick="currentSlides(4)"></span>
+          <span class="indicators" onclick="currentSlides(5)"></span>
+          <span class="indicators" onclick="currentSlides(6)"></span>
+        </div>
+      </div>
+    </section>
   <section id="Certificate">
     <p class="section__text__p1">Browse My </p>
     <h1 class="title" style="color: #47A992;
@@ -244,33 +302,41 @@
     <hr>
     <div class="slider">
       <div class="myslide fade">
-        <img src="assets/certificate-1.png" alt="certificate-1" style="width: 100%; height: 100%;"><br>
-        <h2>Certificate</h2>
+        <div class="details-container-certificate">
+        <img src="assets/certificate-3.png" alt="certificate-1" ><br>
+        <h2>HR Conclave 2024</h2>
       </div>
-
-      <div class="myslide fade">
-        <img src="assets/certificate-2.png" alt="certificate-1" style="width: 100%; height: 100%;"><br>
-        <h2>Certificate</h2>
       </div>
       <div class="myslide fade">
-        <img src="assets/certificate-3.png" alt="certificate-1" style="width: 100%; height: 100%;"><br>
-        <h2>Certificate</h2>
+        <div class="details-container-certificate">
+        <img  src="assets/certificate-2.png" alt="certificate-1" ><br>
+        <h2>Ziroh Labs</h2>
+        </div>
       </div>
-
-
+      <div class="myslide fade">
+        <div class="details-container-certificate">
+        <img src="assets/certificate-1.png" alt="certificate-1" ><br>
+        <h2>Data Science Using Python</h2>
+        </div>
+      </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>      
       <!-- increase these span as per the no of myslide -->
-      <div class="dotsbox" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div class="indicatorbox" style="text-align:center">
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
       </div>
     </div>
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
   </section>
-    <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
     <section id="contact">
       <p class="section__text__p1" >Contact Me</p>
       <h1 class="title" style="color: #47A992;
@@ -307,6 +373,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Interest and Skill</a></li>
             <li><a href="#Certificate">Certificate</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
